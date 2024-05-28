@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/mar.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.group-name {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.members {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.member {
+    flex: 1;
+    margin: 0 30px;
+    text-align: center;
+}
+.member img {
+    width: 100px;
+    height: 100px;
+   
+    background-color: grey;
+}
+.member-info {
+    margin-top: 30px;
+}
