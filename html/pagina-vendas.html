@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda do Lixo Reciclável</title>
+    <link rel="stylesheet" href="/css/pagina-vendas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="/img/lixo_mar.jpg" alt="Venda do lixo reciclável">
+            <h1>Venda do lixo reciclável</h1>
+        </section>
+        <section class="options">
+            <h2>Nossas opções de lixos recicláveis</h2>
+            <ol>
+                <li>papel_branco</li>
+                <li>papelao</li>
+                <li>aluminio</li>
+                <li>cobre</li>
+                <li>aco_inox</li>
+                <li>chumbo</li>
+                <li>latao</li>
+                <li>pet</li>
+                <li>hdpe</li>
+                <li>vidro_transparente</li>
+                <li>vidro_colorido</li>
+            </ol>
+            <form id="recycleForm">
+                <label for="tipoLixo">Digite o número do seu tipo de lixo</label>
+                <input type="number" id="tipoLixo" name="tipoLixo">
+                <label for="quantidadeLixo">Digite em gramas a quantidade do seu lixo</label>
+                <input type="number" id="quantidadeLixo" name="quantidadeLixo">
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="/java_script/pagina-vendas.js"></script>
+</body>
+</html>
