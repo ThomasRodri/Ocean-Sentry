@@ -1,6 +1,7 @@
+/* CSS */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 20px;   
 }
 .container {
     width: 100%;
@@ -8,10 +9,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
 }
-h1 {
+.titulo {
+    padding: 100px; /* Aumenta o padding para expandir a área da imagem de fundo */
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 300px; /* Aumente o valor conforme necessário para aumentar o espaço */
     font-size: 80px; /* Aumente o tamanho da fonte conforme necessário */
+    color: white; /* Define a cor do texto para branco para melhor legibilidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para melhor contraste com a imagem de fundo */
+    padding: 20px; /* Adiciona espaço interno para o texto dentro do elemento h1 */
+    background-image: url('../img/mar-titulo.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto para sua imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento body */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 h2 {
     margin-top: 40px;
@@ -19,4 +27,28 @@ h2 {
 }
 p {
     margin-bottom: 20px;
+}
+
+/* Estilização do cabeçalho */
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-button {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-button:hover {
+    color: #007BFF; /* Cor de destaque ao passar o mouse */
 }
