@@ -16,8 +16,8 @@ header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul li {
@@ -27,6 +27,26 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Added border */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-color: #555; /* Changed border color on hover */
+}
+
+header nav ul li a:active {
+    background-color: #777;
+    border-color: #777; /* Changed border color on active */
+}
+
+header nav ul .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
 }
 
 .banner {
@@ -42,7 +62,7 @@ header nav ul li a {
 
 .banner h1 {
     position: absolute;
-    top: 50%;
+    top: 20%; /* Moved title higher */
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -111,6 +131,10 @@ header nav ul li a {
     .options form button {
         font-size: 1.2em;
     }
+
+    header nav ul li a {
+        font-size: 1.2em;
+    }
 }
 
 /* Medium Screens */
@@ -122,6 +146,10 @@ header nav ul li a {
     .options form label,
     .options form input,
     .options form button {
+        font-size: 1.1em;
+    }
+
+    header nav ul li a {
         font-size: 1.1em;
     }
 }
@@ -142,13 +170,17 @@ header nav ul li a {
     .options form button {
         font-size: 1em;
     }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
 }
 
 /* Extra Small Screens */
 @media (max-width: 480px) {
     header nav ul {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
 
     header nav ul li {
@@ -171,6 +203,10 @@ header nav ul li a {
     .options form label,
     .options form input,
     .options form button {
+        font-size: 0.9em;
+    }
+
+    header nav ul li a {
         font-size: 0.9em;
     }
 }
