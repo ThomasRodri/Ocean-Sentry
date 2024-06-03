@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +17,7 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -34,7 +36,7 @@ header nav ul li a {
 }
 
 .banner img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -45,6 +47,8 @@ header nav ul li a {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 .options {
@@ -92,4 +96,81 @@ header nav ul li a {
 
 .options form button:hover {
     background-color: #555;
+}
+
+/* Responsive Design */
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .options {
+        max-width: 800px;
+    }
+
+    .options form label,
+    .options form input,
+    .options form button {
+        font-size: 1.2em;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .options {
+        max-width: 700px;
+    }
+
+    .options form label,
+    .options form input,
+    .options form button {
+        font-size: 1.1em;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 767px) {
+    .options {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .options h2 {
+        font-size: 1.2em;
+    }
+
+    .options form label,
+    .options form input,
+    .options form button {
+        font-size: 1em;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner h1 {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .options {
+        padding: 10px;
+    }
+
+    .options h2 {
+        font-size: 1em;
+    }
+
+    .options form label,
+    .options form input,
+    .options form button {
+        font-size: 0.9em;
+    }
 }
