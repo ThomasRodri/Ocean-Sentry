@@ -1,39 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('../img/mar.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
-    background-size: cover;
-    color: white;
-    text-align: center;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    box-sizing: border-box;
 }
+
 .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    padding: 20px 0;
 }
-.group-name {
-    font-size: 36px;
-    margin-bottom: 40px;
+
+.logo {
+    width: 150px; /* Ajuste para a logo ser maior */
 }
-.members {
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-container {
     display: flex;
     justify-content: center;
-    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.member {
-    flex: 1;
-    margin: 0 30px;
+
+.team-member {
+    flex-basis: 30%; /* Ajuste para os membros do time */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
 }
-.member img {
-    width: 100px;
-    height: 100px;
-   
-    background-color: grey;
+
+.member-photo {
+    width: 100%; /* Ajuste para as fotos dos membros */
+    height: auto;
 }
-.member-info {
-    margin-top: 30px;
+
+.member-description {
+    margin-top: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-logo, .twitter-logo {
+    width: 50px; /* Redução do tamanho dos ícones para redes sociais */
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team-member {
+        flex-basis: 100%;
+    }
+
+    .logo {
+        width: 120px; /* Tamanho ajustado para dispositivos móveis */
+    }
 }
