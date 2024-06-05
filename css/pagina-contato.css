@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 1rem 0;
+}
+
+.logo {
+    height: 100px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    margin-bottom: 1rem; /* Adicione uma margem inferior para espaço */
+}
+
+.back-button {
+    padding: 1rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.2rem; /* Aumente o tamanho da fonte */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleFormButton {
+    margin-bottom: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-container h1 {
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .logo, .back-button {
+        margin: 0;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    form label, form input, form textarea {
+        flex: 1 1 45%;
+    }
+
+    form button {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .back-button {
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .back-button {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        margin: 2rem auto;
+        width: 70%;
+    }
+}
