@@ -1,14 +1,15 @@
-/* CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;   
 }
+
 .container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Centraliza os itens no container */
 }
+
 .titulo {
     padding: 100px; /* Aumenta o padding para expandir a área da imagem de fundo */
     text-align: left;
@@ -21,10 +22,12 @@ body {
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento body */
     background-position: center; /* Centraliza a imagem de fundo */
 }
+
 h2 {
     margin-top: 40px;
     margin-bottom: 10px;
 }
+
 p {
     margin-bottom: 20px;
 }
@@ -51,4 +54,22 @@ p {
 
 .nav-button:hover {
     color: #007BFF; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilização das imagens e links */
+.image-link {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 100px; /* Espaço adicional abaixo do texto */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
 }
