@@ -25,9 +25,9 @@ header {
 }
 
 .logo {
-    height: 100px; /* Ajuste a altura conforme necessário */
+    height: 100px; 
     width: auto;
-    margin-bottom: 1rem; /* Adicione uma margem inferior para espaço */
+    margin-bottom: 1rem;  
 }
 
 .back-button {
@@ -38,7 +38,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
-    font-size: 1.2rem; /* Aumente o tamanho da fonte */
+    font-size: 1.2rem;  
 }
 
 section {
@@ -80,7 +80,7 @@ form button {
     margin-bottom: 1rem;
 }
 
-/* Media Queries for Responsiveness */
+ 
 @media (min-width: 600px) {
     .header-container {
         flex-direction: row;

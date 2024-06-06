@@ -17,22 +17,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%; /* Padding proporcional */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    padding: 10px 5%;  
+    flex-wrap: wrap;  
 }
 
 .logo {
-    width: 100px; /* Menor para melhor ajuste */
-    min-width: 80px; /* Tamanho mínimo */
+    width: 100px;  
+    min-width: 80px; 
     margin: 5px;
 }
 
 .header-title {
     flex-grow: 1;
     text-align: center;
-    font-size: 18px; /* Tamanho adaptado */
+    font-size: 18px;  
     padding: 0 10px;
-    margin: 0 auto; /* Auto margem para centralização */
+    margin: 0 auto;  
 }
 
 .button {
@@ -58,18 +58,18 @@ header {
 
 .team-container {
     display: flex;
-    justify-content: space-around; /* Espaçamento uniforme */
+    justify-content: space-around;  
     flex-wrap: wrap;
     padding: 0;
 }
 
 .team-member {
-    flex: 1 1 45%; /* Ajuste para ocupar até 45% em telas largas, para dois por linha */
-    max-width: 300px; /* Máximo de largura para evitar membros muito largos */
+    flex: 1 1 45%;  
+    max-width: 300px;  
     background: white;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 10px; /* Espaçamento */
+    margin: 10px;  
     text-align: center;
 }
 
@@ -95,17 +95,17 @@ footer {
 }
 
 .instagram-logo, .twitter-logo {
-    width: 24px; /* Menor para melhor ajuste */
+    width: 24px;  
     margin: 0 5px;
 }
 
 @media (max-width: 768px) {
     .header-title {
-        font-size: 16px; /* Tamanho menor para melhor visualização */
+        font-size: 16px;  
     }
 
     .team-member {
-        flex: 1 1 100%; /* Cada membro ocupa uma linha inteira em telas pequenas */
+        flex: 1 1 100%;  
     }
 
     .logo, .button {
@@ -113,6 +113,6 @@ footer {
     }
 
     header {
-        padding: 10px 3%; /* Menos padding */
+        padding: 10px 3%;  
     }
 }
