@@ -7,30 +7,43 @@ body, html {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
 }
 
 header {
+    background-color: #333;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 5%; /* Padding proporcional */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
 }
 
 .logo {
-    width: 150px; /* Ajuste para a logo ser maior */
+    width: 100px; /* Menor para melhor ajuste */
+    min-width: 80px; /* Tamanho mínimo */
+    margin: 5px;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px; /* Tamanho adaptado */
+    padding: 0 10px;
+    margin: 0 auto; /* Auto margem para centralização */
 }
 
 .button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
 }
 
 .button:hover {
@@ -40,25 +53,28 @@ header {
 .title {
     text-align: center;
     margin: 20px 0;
+    font-size: 22px;
 }
 
 .team-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Espaçamento uniforme */
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 0;
 }
 
 .team-member {
-    flex-basis: 30%; /* Ajuste para os membros do time */
+    flex: 1 1 45%; /* Ajuste para ocupar até 45% em telas largas, para dois por linha */
+    max-width: 300px; /* Máximo de largura para evitar membros muito largos */
     background: white;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px; /* Espaçamento */
     text-align: center;
 }
 
 .member-photo {
-    width: 100%; /* Ajuste para as fotos dos membros */
+    width: 100%;
     height: auto;
 }
 
@@ -70,12 +86,7 @@ footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.footer-text {
-    margin-bottom: 10px;
+    padding: 15px 5%;
 }
 
 .social-links {
@@ -84,20 +95,24 @@ footer {
 }
 
 .instagram-logo, .twitter-logo {
-    width: 50px; /* Redução do tamanho dos ícones para redes sociais */
-    margin: 0 10px;
+    width: 24px; /* Menor para melhor ajuste */
+    margin: 0 5px;
 }
 
 @media (max-width: 768px) {
-    .team-container {
-        flex-direction: column;
+    .header-title {
+        font-size: 16px; /* Tamanho menor para melhor visualização */
     }
 
     .team-member {
-        flex-basis: 100%;
+        flex: 1 1 100%; /* Cada membro ocupa uma linha inteira em telas pequenas */
     }
 
-    .logo {
-        width: 120px; /* Tamanho ajustado para dispositivos móveis */
+    .logo, .button {
+        padding: 5px;
+    }
+
+    header {
+        padding: 10px 3%; /* Menos padding */
     }
 }
