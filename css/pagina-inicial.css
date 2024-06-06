@@ -70,10 +70,21 @@ header {
     text-align: center;
 }
 
+.images-section {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    text-align: center;
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+}
+
 .image-link {
     display: block;
-    margin: 20px auto;
-    width: 70%;
+    width: 100%;
 }
 
 .image {
@@ -82,11 +93,10 @@ header {
     border-radius: 10px;
 }
 
-.image-text {
-    margin: 20px auto;
-    width: 80%;
+.image-description {
+    margin-top: 10px;
     font-size: 1.2em;
-    text-align: center;
+    color: #555;
 }
 
 footer {
@@ -174,7 +184,7 @@ footer {
         gap: 10px;
     }
 
-    .image-link {
+    .image-container {
         width: 90%;
     }
 }
@@ -193,7 +203,7 @@ footer {
         padding: 30px 20px;
     }
 
-    .image-text {
+    .image-description {
         font-size: 1em;
     }
 }
